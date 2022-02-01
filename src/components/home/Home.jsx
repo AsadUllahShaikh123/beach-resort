@@ -1,14 +1,25 @@
 import React from 'react';
-import image from '../../images/bg2.jpg'
-import Hero from './Hero';
+import Featured from './Featured';
+import Footer from './Footer';
+import Hero from '../Hero'
 import Services from './Services';
+import image from '../../images/bg1.jpg'
+
 const Home = () => {
+  const homeData = {
+    image,
+    heading:'Luxury Rooms',
+    description:'Deluxe Rooms Starts at $300',
+    btn:'OUR ROOMS',
+    bg:'bg-black/60',
+    destination:'/rooms'
+  }
   return (
     <>
-    <div style={{backgroundImage:`url(${image})`,width:'100%',minHeight:'100vh',backgroundSize:'100% 100%',backgroundPosition:'center',backgroundRepeat:'no-repeat'}}>
-      <Hero/>
-    </div>
+     <Hero homeData = {homeData}/>
     <Services/>
+    <Featured/>
+    <Footer/>
    </>
   )
 };
