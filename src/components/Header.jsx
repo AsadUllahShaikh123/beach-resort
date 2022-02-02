@@ -1,8 +1,10 @@
 import { Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
-
+  let navigate = useNavigate();
   let [color, setColor] = useState('')
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -22,10 +24,10 @@ const Header = () => {
           <h1 className='text-4xl inline-flex text-blue-400 hover:cursor-pointer hover:text-orange-300 font-bold'>Luxury Rooms</h1>
         </div>
         <div className='navlinks flex flex-col md:flex-row md:justify-around w-full mt-4 md:mt-0 text-blue-400 md:w-5/12 items-center'>
-          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }}>Home</Typography>
-          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }}>Rooms</Typography>
-          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }}>About</Typography>
-          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }}>Contact</Typography>
+          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/')}>Home</Typography>
+          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/rooms')}>Rooms</Typography>
+          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/rooms')}>About</Typography>
+          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/rooms')}>Contact</Typography>
         </div>
       </div>
     </>
