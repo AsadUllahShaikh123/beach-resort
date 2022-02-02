@@ -1,4 +1,5 @@
 import React from 'react';
+import Heading from '../Heading';
 
 const Services = () => {
 
@@ -25,16 +26,13 @@ const Services = () => {
     }
 
   ]
-
+  const heading = 'Services'
   return (
     <>
       <div style={{ height: '90vh' }}>
-        <div style={{ height: '30vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          <div className='w-auto  flex flex-col items-center'>
-            <h1 className='text-center text-6xl mb-4 font-medium  text-blue-500'>Services</h1>
-            <p className='h-1 rounded-md bg-gray-900  block w-4/6'></p>
-          </div>
-        </div>
+
+        <Heading heading={heading} />
+
         <div className='bg-gray-100 p-4'>
           <div className='grid grid-cols-1 gap-y-8 sm:grid-cols-2 
           sm:gap-8
@@ -43,7 +41,7 @@ const Services = () => {
               data.map((values) =>
                 <div className='bg-white rounded-md'>
                   <div className='flex justify-center my-6 '>
-                    <div className='w-auto hover:cursor-pointer hover:animate-spin hover:transition hover:duration-1000'>
+                    <div className='w-auto hover:cursor-pointer hover:animate-spin '>
                     <i class={values.icon} style={{ color: '#0277bd', fontSize: '100px' }}></i>
                     </div>
                   </div>
