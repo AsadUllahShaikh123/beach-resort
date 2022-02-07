@@ -1,20 +1,22 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import Home from './components/home/Home';
+import Room from './components/Room';
 import Rooms from './components/rooms/Rooms';
 
 const App = () => {
 
-  
+  let location = useLocation();
+  let { state } = location;
+
   return (
     <>
-      <Header />
       <Routes >
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home />} />
 
-        <Route path='/rooms' element={<Rooms/>}/>
-         
+        <Route path='/rooms' element={<Rooms />} />
+        <Route path='/rooms/:category' element={<Room state={state}/>} />
+
       </Routes>
 
 

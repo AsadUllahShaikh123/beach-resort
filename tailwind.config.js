@@ -3,9 +3,7 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {rotate: {
-      '360': '360deg',
-    } },
+    extend: {display: ["group-hover"]},
   },
   plugins: [],
 }

@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Hero from '../Hero'
 import Services from './Services';
 import image from '../../images/bg1.jpg'
+import Header from '../Header';
 
 const Home = () => {
   const homeData = {
@@ -16,6 +17,7 @@ const Home = () => {
   }
   return (
     <>
+    <Header/>
      <Hero homeData = {homeData}/>
     <Services/>
     <Featured/>
