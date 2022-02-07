@@ -28,7 +28,7 @@ const Room = (props) => {
     image: img,
     heading: category,
     description: 'Room',
-    btn: 'Go Back To Home',
+    btn: 'Go Back To Rooms  ',
     bg: 'bg-black/60',
     destination: '/rooms'
   }
