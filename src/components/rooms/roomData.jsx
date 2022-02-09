@@ -53,7 +53,7 @@ export const homeData = {
   heading:'Available Rooms',
   description:'Best In Class Room',
   btn:'Go Back To Home',
-  bg:'bg-black/60', 
+  bg:'bg-black/60',  
   destination:'/'
 }
 
