@@ -16,7 +16,7 @@ const Header = () => {
         setColor('transparent')
     })
   }, [])
-  let mainContainer = 'flex flex-col w-screen p-4 items-center  md:flex-row overflow-hidden  fixed z-50'
+  let mainContainer = 'flex flex-col w-screen p-4 items-center  md:flex-row overflow-hidden  fixed top-0 z-50'
   return (  
     <>
       <div className={mainContainer} style={{ backgroundColor: `${color}`, transition: '0.5s' }}>
@@ -26,7 +26,7 @@ const Header = () => {
         <div className='navlinks flex flex-col md:flex-row md:justify-around w-full mt-4 md:mt-0 text-blue-400 md:w-5/12 items-center'>
           <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/')}>Home</Typography>
           <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/rooms')}>Rooms</Typography>
-          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/rooms')}>About</Typography>
+          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/about')}>About</Typography>
           <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/rooms')}>Contact</Typography>
         </div>
       </div>
