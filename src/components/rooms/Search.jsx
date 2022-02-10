@@ -1,4 +1,3 @@
-import { Container } from '@mui/material';
 import React from 'react';
 import Heading from '../Heading';
 
@@ -9,9 +8,6 @@ const Search = () => {
     <>
       <div style={{height:'90vh'}}>
          <Heading heading={heading} />
-         <Container>
-           
-         </Container>
       </div>
     </>
   )

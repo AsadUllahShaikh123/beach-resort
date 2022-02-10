@@ -97,7 +97,7 @@ const MainScreen = () => {
                         <div className='w-full mb-6'>
                           <img src={values.image} alt="" srcset="" />
                         </div>
-                        <Typography variant='h5' >
+                        <Typography variant='h5' style={{fontWeight:'bold'}} >
                           {values.designation}
                         </Typography>
                         <div className='flex justify-between items-center mt-2'>
@@ -122,11 +122,8 @@ const MainScreen = () => {
                     </div>
                   )
                 }
-
               </div>
             </div>
-            
-
             <div className='flex justify-between mt-16' >
                 <div>
                   <Typography style={{fontSize:'1.5rem'}} className='text-gray-500'>

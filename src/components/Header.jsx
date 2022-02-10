@@ -27,7 +27,7 @@ const Header = () => {
           <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/')}>Home</Typography>
           <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/rooms')}>Rooms</Typography>
           <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/about')}>About</Typography>
-          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/rooms')}>Contact</Typography>
+          <Typography className='hover:cursor-pointer hover:text-orange-300 ' style={{ fontWeight: 'bold', padding: '.3rem', fontSize: '1.5rem' }} onClick={()=> navigate('/contact')}>Contact</Typography>
         </div>
       </div>
     </>
