@@ -9,6 +9,7 @@ const Contact = () => {
       <Header />
       <div className='min-h-screen'>
         <div className='mt-24 h-5/6 w-full flex justify-center p'>
+          
           <div className='w-1/2 px-4' style={{ boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px' }}>
             <Typography variant='h2' style={{ textAlign: 'center', marginBottom: '6rem' }} className='text-gray-300 bg-gray-700'>
               Contact us
